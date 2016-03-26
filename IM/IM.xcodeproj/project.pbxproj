@@ -12,6 +12,12 @@
 		82E34D981CA7122A00718AE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E34D961CA7122A00718AE4 /* Main.storyboard */; };
 		82E34D9A1CA7122A00718AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E34D991CA7122A00718AE4 /* Assets.xcassets */; };
 		82E34D9D1CA7122A00718AE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E34D9B1CA7122A00718AE4 /* LaunchScreen.storyboard */; };
+		82E34DA71CA717F200718AE4 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E34DA61CA717F200718AE4 /* libicucore.A.tbd */; };
+		82E34DA91CA7180800718AE4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E34DA81CA7180800718AE4 /* libc++.tbd */; };
+		82E34DAB1CA7181300718AE4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E34DAA1CA7181300718AE4 /* CFNetwork.framework */; };
+		82E34DAD1CA7181E00718AE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E34DAC1CA7181E00718AE4 /* Security.framework */; };
+		82E34DAF1CA7182E00718AE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E34DAE1CA7182E00718AE4 /* SystemConfiguration.framework */; };
+		82EDEC511CA71E5B00A2F272 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDEC501CA71E5B00A2F272 /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		82E34D991CA7122A00718AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82E34D9C1CA7122A00718AE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82E34D9E1CA7122A00718AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E34DA61CA717F200718AE4 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
+		82E34DA81CA7180800718AE4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		82E34DAA1CA7181300718AE4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		82E34DAC1CA7181E00718AE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		82E34DAE1CA7182E00718AE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		82EDEC501CA71E5B00A2F272 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E34DAF1CA7182E00718AE4 /* SystemConfiguration.framework in Frameworks */,
+				82E34DAD1CA7181E00718AE4 /* Security.framework in Frameworks */,
+				82E34DAB1CA7181300718AE4 /* CFNetwork.framework in Frameworks */,
+				82EDEC511CA71E5B00A2F272 /* Firebase.framework in Frameworks */,
+				82E34DA91CA7180800718AE4 /* libc++.tbd in Frameworks */,
+				82E34DA71CA717F200718AE4 /* libicucore.A.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,11 @@
 		82E34D861CA7122A00718AE4 = {
 			isa = PBXGroup;
 			children = (
+				82E34DA61CA717F200718AE4 /* libicucore.A.tbd */,
+				82E34DA81CA7180800718AE4 /* libc++.tbd */,
+				82E34DAC1CA7181E00718AE4 /* Security.framework */,
+				82E34DAE1CA7182E00718AE4 /* SystemConfiguration.framework */,
+				82E34DAA1CA7181300718AE4 /* CFNetwork.framework */,
 				82E34D911CA7122A00718AE4 /* IM */,
 				82E34D901CA7122A00718AE4 /* Products */,
 			);
@@ -60,6 +83,7 @@
 				82E34D991CA7122A00718AE4 /* Assets.xcassets */,
 				82E34D9B1CA7122A00718AE4 /* LaunchScreen.storyboard */,
 				82E34D9E1CA7122A00718AE4 /* Info.plist */,
+				82EDEC501CA71E5B00A2F272 /* Firebase.framework */,
 			);
 			path = IM;
 			sourceTree = "<group>";
@@ -247,6 +271,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IM",
+				);
 				INFOPLIST_FILE = IM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoseApps.IM;
@@ -258,6 +286,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IM",
+				);
 				INFOPLIST_FILE = IM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoseApps.IM;
@@ -284,6 +316,7 @@
 				82E34DA31CA7122A00718AE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
