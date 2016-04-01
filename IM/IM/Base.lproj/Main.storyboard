@@ -28,20 +28,24 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biJ-mR-JwC">
                                 <rect key="frame" x="20" y="227" width="560" height="264"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fx-Z1-7fy">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fx-Z1-7fy" customClass="MaterialField" customModule="IM" customModuleProvider="target">
                                         <rect key="frame" x="8" y="23" width="544" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="lA6-Fu-PO2"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="z70-9r-M6P"/>
                                         </constraints>
+                                        <color key="textColor" red="0.31764705882352939" green="0.1764705882352941" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kG9-fl-V4R">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kG9-fl-V4R" customClass="MaterialField" customModule="IM" customModuleProvider="target">
                                         <rect key="frame" x="8" y="74" width="544" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="qJK-KR-n0U"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="tw8-aY-Tlm"/>
                                             <constraint firstAttribute="height" constant="30" id="wEt-5Q-SUm"/>
                                         </constraints>
+                                        <color key="textColor" red="0.31764705882352939" green="0.1764705882352941" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
