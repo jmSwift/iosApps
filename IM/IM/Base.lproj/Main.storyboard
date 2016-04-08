@@ -90,14 +90,29 @@
                                         <state key="normal" title="Login with Facebook">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fbBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cA-Xe-Khf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31764705882352939" green="0.1764705882352941" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="PuS-jK-UkQ"/>
+                                    <constraint firstAttribute="height" constant="35" id="hIQ-9j-YRf"/>
                                     <constraint firstItem="hkg-bB-EvB" firstAttribute="centerY" secondItem="BP7-gX-7Ls" secondAttribute="centerY" id="qLC-WF-gy0"/>
                                     <constraint firstItem="hkg-bB-EvB" firstAttribute="centerX" secondItem="BP7-gX-7Ls" secondAttribute="centerX" id="vQC-qC-b57"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hIQ-9j-YRf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="PuS-jK-UkQ"/>
+                                        <include reference="hIQ-9j-YRf"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -116,6 +131,11 @@
                             <constraint firstItem="BP7-gX-7Ls" firstAttribute="top" secondItem="biJ-mR-JwC" secondAttribute="bottom" constant="74" id="wAg-kY-dbC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BP7-gX-7Ls" secondAttribute="trailing" constant="-20" id="zyK-7E-7hC"/>
                         </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="D3C-8n-c9N"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="9fx-Z1-7fy" id="Vfu-Qp-eNE"/>
