@@ -14,3 +14,8 @@ let SHADOW_COLOR: CGFloat = 157.0 / 255.0
 let RED: CGFloat = 81.0 / 255.0
 let BLUE: CGFloat = 168.0 / 255.0
 let GREEN: CGFloat = 45.0 / 255.0
+
+let KEY_UID = "uid"
+
+//Segues
+let LOGGED_IN = "loggedIn"
