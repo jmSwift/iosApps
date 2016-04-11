@@ -10,15 +10,42 @@ import UIKit
 import Firebase
 import FBSDKLoginKit // needed for FB
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     //Firebase instantiation
     let REF = Firebase(url: "https://myinstantmessenger.firebaseio.com")
     // facebookLogin = FBSDKLoginManager()
 
-    @IBOutlet var emailTextField: MaterialField!
     
-    @IBOutlet var passwordField: MaterialField!
+    
+    @IBOutlet weak var email: MaterialField!
+    
+    @IBOutlet weak var pass: MaterialField!
+    
+    @IBOutlet weak var signWithEmail: UIButton!
+    
+
+    @IBAction func signIn(sender: AnyObject) {
+        let newEmail = email.text
+        let newPass = pass.text
+        
+        if newEmail != "" && newPass != "" {
+            print("worked")
+        } else {
+            print("didnt work")
+        }
+        
+    }
+    
+    
+    func showErrorAlert(title: String , msg: String)
+    {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle:  .Alert)
+        let action = UIAlertAction(title : "Ok", style: .Default, handler : nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
     
     @IBAction func fbBtnPressed(sender: UIButton!)
     {
@@ -45,15 +72,10 @@ class ViewController: UIViewController {
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier("loggedIn", sender: nil)
                         
-                        
-                        
-                        
-                        
+                                        
                     }
                     
-                    
                 })
-                
                 
             }
         
@@ -61,13 +83,17 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
     //automatically to logged in section if recognized
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         //if user is logged into FB automatically log them into the loggedIn segue (home)
+        /*
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
-            self.performSegueWithIdentifier(LOGGED_IN, sender: nil)
+         self.performSegueWithIdentifier(LOGGED_IN, sender: nil)
         }
+        */
         
     }
     
@@ -78,6 +104,10 @@ class ViewController: UIViewController {
        
     }
 
+    func textFieldShouldEndEditing( emailTextField: MaterialField, passwordField: MaterialField) -> Bool
+    {
+        return true
+    }
 
 
 }

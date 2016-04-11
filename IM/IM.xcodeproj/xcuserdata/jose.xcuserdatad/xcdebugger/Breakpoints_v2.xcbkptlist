@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IM/AppDelegate.swift"
@@ -38,11 +38,11 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IM.DataService.__deallocating_deinit"
+                  symbolName = "IM.DataService.deinit"
                   moduleName = "IM"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jose/Desktop/iosApps/IM/DataService.swift"
-                  timestampString = "481795518.003906"
+                  timestampString = "482045306.99838"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -57,12 +57,106 @@
                   moduleName = "IM"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jose/Desktop/iosApps/IM/DataService.swift"
-                  timestampString = "481795518.004353"
+                  timestampString = "482045306.99855"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
                   endingLineNumber = "18"
                   offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IM/ViewController.swift"
+            timestampString = "482045305.961406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fbBtnPressed(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IM/ViewController.swift"
+            timestampString = "482008213.501794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IM.ViewController.emailTextField.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "IM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jose/Desktop/iosApps/IM/IM/ViewController.swift"
+                  timestampString = "482006411.513215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IM.ViewController.emailTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "IM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jose/Desktop/iosApps/IM/IM/ViewController.swift"
+                  timestampString = "482006411.5134"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IM.ViewController.init (IM.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; IM.ViewController"
+                  moduleName = "IM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jose/Desktop/iosApps/IM/IM/ViewController.swift"
+                  timestampString = "482006411.51371"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "193">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IM.ViewController.init (IM.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;IM.ViewController&gt;"
+                  moduleName = "IM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jose/Desktop/iosApps/IM/IM/ViewController.swift"
+                  timestampString = "482006411.513857"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "116">
                </Location>
             </Locations>
          </BreakpointContent>
