@@ -19,3 +19,7 @@ let KEY_UID = "uid"
 
 //Segues
 let LOGGED_IN = "loggedIn"
+
+//firebase codes
+let STATUS_ACCOUNT_NONEXIST = -8
+let WRONG_PASSWORD = -6

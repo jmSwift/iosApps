@@ -11,7 +11,7 @@ import UIKit
 //import <QuartzCore/QuartzCore.h>
 
 class MaterialField: UITextField{
-
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         
@@ -29,5 +29,10 @@ class MaterialField: UITextField{
        self.textColor = UIColor(red: RED, green: GREEN, blue: BLUE, alpha: 0.5)
         //self.tintColor = UIColor.purpleColor()
        // selt.attribute
+        
+       
+
     }
+
+    
 }

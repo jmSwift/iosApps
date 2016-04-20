@@ -10,6 +10,7 @@
 		820AF8B21CB4DC7500F116FA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820AF8B11CB4DC7500F116FA /* Bolts.framework */; };
 		820AF8B41CB4DC8200F116FA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820AF8B31CB4DC8100F116FA /* FBSDKCoreKit.framework */; };
 		820AF8B61CB4DC8C00F116FA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820AF8B51CB4DC8C00F116FA /* FBSDKLoginKit.framework */; };
+		820CB0641CBCC6F5000D6472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820CB0631CBCC6F5000D6472 /* Images.xcassets */; };
 		827D9B821CAE2EF500D48409 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D9B811CAE2EF500D48409 /* MaterialView.swift */; };
 		827D9B851CAE2F6100D48409 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D9B841CAE2F6100D48409 /* Constants.swift */; };
 		827D9B871CAE334200D48409 /* MaterialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D9B861CAE334200D48409 /* MaterialField.swift */; };
@@ -32,6 +33,7 @@
 		820AF8B11CB4DC7500F116FA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		820AF8B31CB4DC8100F116FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		820AF8B51CB4DC8C00F116FA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		820CB0631CBCC6F5000D6472 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		827D9B811CAE2EF500D48409 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		827D9B841CAE2F6100D48409 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		827D9B861CAE334200D48409 /* MaterialField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialField.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				82E34D941CA7122A00718AE4 /* ViewController.swift */,
 				82CD8E231CB785F70079C5FD /* Main.storyboard */,
 				82E34D991CA7122A00718AE4 /* Assets.xcassets */,
+				820CB0631CBCC6F5000D6472 /* Images.xcassets */,
 				82E34D9B1CA7122A00718AE4 /* LaunchScreen.storyboard */,
 				82E34D9E1CA7122A00718AE4 /* Info.plist */,
 				82EDEC501CA71E5B00A2F272 /* Firebase.framework */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E34D9D1CA7122A00718AE4 /* LaunchScreen.storyboard in Resources */,
+				820CB0641CBCC6F5000D6472 /* Images.xcassets in Resources */,
 				82CD8E1F1CB76DF90079C5FD /* Default-568h@2x.png in Resources */,
 				82E34D9A1CA7122A00718AE4 /* Assets.xcassets in Resources */,
 				82CD8E251CB785F70079C5FD /* Main.storyboard in Resources */,

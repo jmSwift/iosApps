@@ -30,9 +30,41 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let newPass = pass.text
         
         if newEmail != "" && newPass != "" {
-            print("worked")
+           
+            self.REF.authUser(newEmail, password: newPass, withCompletionBlock: {
+                error, authData in
+                
+                //if user does not exist
+                if error != nil {
+                    print(error)
+                    
+                    //if user does not exist do the following
+                    if error.code == STATUS_ACCOUNT_NONEXIST {
+                        self.REF.createUser(newEmail, password: newPass, withValueCompletionBlock: { error, result in
+                            
+                            
+                            if error != nil {
+                                self.showErrorAlert("Could not create acount", msg: "Problem creating account. try something else")
+                                
+                            } else {
+                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID],forKey: KEY_UID)
+                                
+                                self.REF.authUser(newEmail, password: newPass, withCompletionBlock: nil)
+                                
+                                self.performSegueWithIdentifier(LOGGED_IN, sender: nil)
+                                
+                            }
+                            
+                        })
+                    } else if error.code == -6 {
+                        self.showErrorAlert("Error", msg: "invalid username or passord")
+                    }
+                } else {
+                    self.performSegueWithIdentifier(LOGGED_IN, sender: nil)
+                }
+            })
         } else {
-            print("didnt work")
+            showErrorAlert("Error",msg: "You must enter an email and password")
         }
         
     }
@@ -44,6 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let action = UIAlertAction(title : "Ok", style: .Default, handler : nil)
         alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
+        
         
     }
     
@@ -72,7 +105,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier("loggedIn", sender: nil)
                         
-                                        
+                        
                     }
                     
                 })
@@ -89,11 +122,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         //if user is logged into FB automatically log them into the loggedIn segue (home)
-        /*
+        
+        
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
          self.performSegueWithIdentifier(LOGGED_IN, sender: nil)
         }
-        */
+        
         
     }
     
