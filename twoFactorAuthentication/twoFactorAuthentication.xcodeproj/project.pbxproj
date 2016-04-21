@@ -16,6 +16,8 @@
 		82B93D6C1CC0012D00C18CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B93D6A1CC0012D00C18CE9 /* LaunchScreen.storyboard */; };
 		82F0E6BF1CC08E7800D9130A /* myTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F0E6BE1CC08E7800D9130A /* myTextField.swift */; };
 		82F0E6C11CC09CA400D9130A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F0E6C01CC09CA400D9130A /* LocalAuthentication.framework */; };
+		82F99F8F1CC896370039A4FA /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99F8E1CC896370039A4FA /* TaskManager.swift */; };
+		82F99F951CC8B0580039A4FA /* addingTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F99F941CC8B0580039A4FA /* addingTasks.swift */; };
 		82FCBE371CC3478C007935A4 /* myButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FCBE361CC3478C007935A4 /* myButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		82F0E6BD1CC08C2300D9130A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		82F0E6BE1CC08E7800D9130A /* myTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTextField.swift; sourceTree = "<group>"; };
 		82F0E6C01CC09CA400D9130A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		82F99F8E1CC896370039A4FA /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		82F99F941CC8B0580039A4FA /* addingTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addingTasks.swift; sourceTree = "<group>"; };
 		82FCBE361CC3478C007935A4 /* myButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +54,8 @@
 		82B93D551CC0012D00C18CE9 = {
 			isa = PBXGroup;
 			children = (
+				82F99F941CC8B0580039A4FA /* addingTasks.swift */,
+				82F99F8E1CC896370039A4FA /* TaskManager.swift */,
 				82FCBE391CC34BD2007935A4 /* Custom Classes */,
 				82FCBE381CC34BC0007935A4 /* Frameworks */,
 				82B93D601CC0012D00C18CE9 /* twoFactorAuthentication */,
@@ -170,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F99F8F1CC896370039A4FA /* TaskManager.swift in Sources */,
+				82F99F951CC8B0580039A4FA /* addingTasks.swift in Sources */,
 				82B93D641CC0012D00C18CE9 /* ViewController.swift in Sources */,
 				82F0E6BF1CC08E7800D9130A /* myTextField.swift in Sources */,
 				82B93D621CC0012D00C18CE9 /* AppDelegate.swift in Sources */,

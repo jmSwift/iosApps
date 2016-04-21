@@ -30,8 +30,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var createAccount: UIButton!
     
     
-    
-    
     func authenticateUser() {
         let context : LAContext = LAContext()
         
@@ -244,7 +242,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
          // Do any additional setup after loading the view, typically from a nib.
         
-        emailTextField.attributedPlaceholder = NSAttributedString(string:"Enter Email",
+         emailTextField.attributedPlaceholder = NSAttributedString(string:"Enter Email",
             attributes:[NSForegroundColorAttributeName: UIColor(red:0.40, green:0.25, blue:0.45, alpha:1)])
         
         emailTextField.textColor = UIColor(red:0.40, green:0.25, blue:0.45, alpha:1)
@@ -258,6 +256,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //
         
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -266,6 +265,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
 
-
+    
+    
 }
 
