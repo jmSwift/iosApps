@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+var array1:[String] =  [String]()
+
+
 class addingTaks: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var addEmail: myTextField!
@@ -25,5 +28,30 @@ class addingTaks: UIViewController, UITextFieldDelegate{
         
         addPassword.textColor = UIColor(red:0.40, green:0.25, blue:0.45, alpha:1)
         
+        if(NSUserDefaults.standardUserDefaults().objectForKey("Array") != nil ) {
+        array1 = NSUserDefaults.standardUserDefaults().objectForKey("Array") as! NSArray as! [String]
+        }
     }
+    
+    var array:[String] = [String]()
+    
+    
+    
+    @IBAction func actionPressed(sender: AnyObject) {
+        
+        array1.append(addEmail.text!)
+        
+        NSUserDefaults.standardUserDefaults().setObject(array1, forKey: "Array")
+        
+        
+        if (NSUserDefaults.standardUserDefaults().stringForKey("Array") != nil){
+         array1  =  NSUserDefaults.standardUserDefaults().objectForKey("Array")! as! NSArray as! [String]
+        }
+        //array1.append(array[sender.tag])
+        NSUserDefaults.standardUserDefaults().setObject(array1, forKey: "Array")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        print(NSUserDefaults.standardUserDefaults().objectForKey("Array"))
+    }
+    
 }

@@ -116,7 +116,7 @@
         <!--Table View Controller-->
         <scene sceneID="FqC-ri-AvN">
             <objects>
-                <tableViewController id="xlw-Qh-IMI" sceneMemberID="viewController">
+                <tableViewController id="xlw-Qh-IMI" customClass="tableViewController" customModule="twoFactorAuthentication" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aMn-Hz-1Og">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +144,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tblTasks" destination="aMn-Hz-1Og" id="KS4-iE-HsK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nre-A4-TGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +190,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.40392156862745099" green="0.25490196078431371" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="actionPressed:" destination="gt1-Pv-MCo" eventType="touchUpInside" id="m9g-hO-CwT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

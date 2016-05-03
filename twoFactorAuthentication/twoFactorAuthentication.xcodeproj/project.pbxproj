@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		82696D581CC6F8BB00DCEA82 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82696D571CC6F8BB00DCEA82 /* SignUpStoryBoard.storyboard */; };
 		82696D5A1CC6F8DD00DCEA82 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82696D591CC6F8DD00DCEA82 /* SignUpViewController.swift */; };
+		828300AF1CD823A40030806E /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828300AE1CD823A40030806E /* tableViewController.swift */; };
 		82B93D621CC0012D00C18CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B93D611CC0012D00C18CE9 /* AppDelegate.swift */; };
 		82B93D641CC0012D00C18CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B93D631CC0012D00C18CE9 /* ViewController.swift */; };
 		82B93D671CC0012D00C18CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B93D651CC0012D00C18CE9 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		82696D571CC6F8BB00DCEA82 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignUpStoryBoard.storyboard; path = ../SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
 		82696D591CC6F8DD00DCEA82 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		828300AE1CD823A40030806E /* tableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		82B93D5E1CC0012D00C18CE9 /* twoFactorAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twoFactorAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B93D611CC0012D00C18CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82B93D631CC0012D00C18CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		82B93D551CC0012D00C18CE9 = {
 			isa = PBXGroup;
 			children = (
+				828300AE1CD823A40030806E /* tableViewController.swift */,
 				82F99F941CC8B0580039A4FA /* addingTasks.swift */,
 				82F99F8E1CC896370039A4FA /* TaskManager.swift */,
 				82FCBE391CC34BD2007935A4 /* Custom Classes */,
@@ -179,6 +182,7 @@
 				82F99F8F1CC896370039A4FA /* TaskManager.swift in Sources */,
 				82F99F951CC8B0580039A4FA /* addingTasks.swift in Sources */,
 				82B93D641CC0012D00C18CE9 /* ViewController.swift in Sources */,
+				828300AF1CD823A40030806E /* tableViewController.swift in Sources */,
 				82F0E6BF1CC08E7800D9130A /* myTextField.swift in Sources */,
 				82B93D621CC0012D00C18CE9 /* AppDelegate.swift in Sources */,
 				82FCBE371CC3478C007935A4 /* myButton.swift in Sources */,

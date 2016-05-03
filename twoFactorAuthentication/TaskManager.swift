@@ -19,9 +19,10 @@ class TaskManager: NSObject {
     
     var tasks = [task]()
     
-    func addTask(websiteUrl :String, websitePassword :String)
+    func addTask(websiteUrl :String, websitePassword :String) -> Void
     {
         tasks.append(task(websiteUrl: websiteUrl, websitePassword: websitePassword))
+       
         
     }
 }
