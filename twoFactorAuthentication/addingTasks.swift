@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 var array1:[String] =  [String]()
-
+var array:[String] = [String]()
 
 class addingTaks: UIViewController, UITextFieldDelegate{
     
@@ -31,16 +31,18 @@ class addingTaks: UIViewController, UITextFieldDelegate{
         if(NSUserDefaults.standardUserDefaults().objectForKey("Array") != nil ) {
         array1 = NSUserDefaults.standardUserDefaults().objectForKey("Array") as! NSArray as! [String]
         }
+        
+       
     }
     
-    var array:[String] = [String]()
+   // var array:[String] = [String]()
     
     
     
     @IBAction func actionPressed(sender: AnyObject) {
         
-        array1.append(addEmail.text!)
-        
+        //array1.append(addEmail.text!)
+        array1.append(addEmail.text! + "     " + addPassword.text!)
         NSUserDefaults.standardUserDefaults().setObject(array1, forKey: "Array")
         
         
@@ -48,6 +50,11 @@ class addingTaks: UIViewController, UITextFieldDelegate{
          array1  =  NSUserDefaults.standardUserDefaults().objectForKey("Array")! as! NSArray as! [String]
         }
         //array1.append(array[sender.tag])
+        
+        //NEW Stuff---------------------------------------------------------------------------------------------------
+       
+        
+        //00000000000000000000000000000000000000000
         NSUserDefaults.standardUserDefaults().setObject(array1, forKey: "Array")
         NSUserDefaults.standardUserDefaults().synchronize()
         
