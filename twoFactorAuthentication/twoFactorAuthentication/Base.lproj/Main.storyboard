@@ -132,8 +132,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="xlw-Qh-IMI" id="oIf-wl-kV5"/>
-                            <outlet property="delegate" destination="xlw-Qh-IMI" id="fCV-q9-rHU"/>
+                            <outlet property="dataSource" destination="xlw-Qh-IMI" id="1RK-mY-cg1"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Zrr-90-5W1">
@@ -145,7 +144,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="tblTasks" destination="aMn-Hz-1Og" id="KS4-iE-HsK"/>
+                        <outlet property="tbl2Tasks" destination="aMn-Hz-1Og" id="UO3-XD-CSK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nre-A4-TGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
