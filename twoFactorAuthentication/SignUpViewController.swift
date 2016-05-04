@@ -61,6 +61,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
             
+            //@@
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "accountActive")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
             alertController.addAction(OKAction)
             self.presentViewController(alertController, animated: false, completion:nil)
             

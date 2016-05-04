@@ -91,7 +91,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func login(password: String){
-        if password == "1234" {// && username ==  "jose" {
+        if password == NSUserDefaults.standardUserDefaults().stringForKey("password") {// && username ==  "jose" {
             //self.loadData()------------------------------------------
         } else {
             self.incorrectPasswordAlert()
@@ -191,7 +191,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 else {
                     showErrorAlert("Invalid credentials", message: "Incorrect username/passowrd. try again")
                 }
-            }
+            }else {
+                showErrorAlert("Invalid credentials", message: "Incorrect username/passowrd. try again")            }
         }
     
     }
@@ -229,8 +230,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
        
+        if(NSUserDefaults.standardUserDefaults().boolForKey("accountActive") == true) {
         self.authenticateUser()
-        
+        }
         
     }
  
