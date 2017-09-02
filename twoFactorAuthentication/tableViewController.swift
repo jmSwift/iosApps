@@ -125,6 +125,8 @@ class tableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "fingerPrint")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
         
          

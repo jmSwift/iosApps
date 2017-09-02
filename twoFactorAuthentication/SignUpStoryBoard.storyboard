@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="width" constant="270" id="aBk-kD-Tfd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ids-bS-NQL" customClass="myButton" customModule="twoFactorAuthentication" customModuleProvider="target">
                                 <rect key="frame" x="52" y="177" width="270" height="34"/>

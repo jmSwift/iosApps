@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Djikstras" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3Q-eO-3Hr">
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.69019607843137254" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-yT-Zha" customClass="blueTextField" customModule="Djikstras" customModuleProvider="target">
+                                <rect key="frame" x="57" y="475" width="260" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Starting City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yhy-H9-Zgg" customClass="blueTextField" customModule="Djikstras" customModuleProvider="target">
+                                <rect key="frame" x="57" y="415" width="260" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5O-kK-Okd" customClass="blueButton" customModule="Djikstras" customModuleProvider="target">
+                                <rect key="frame" x="140" y="538" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.0" green="0.69019607843137254" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAR-li-RA6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="endingCity" destination="bTi-yT-Zha" id="m7l-S8-fUD"/>
+                        <outlet property="searchButton" destination="L5O-kK-Okd" id="iHf-WD-X0H"/>
+                        <outlet property="startingCity" destination="Yhy-H9-Zgg" id="V9x-bw-5QT"/>
+                        <segue destination="Rg0-dx-tev" kind="show" identifier="search" id="lCB-de-S3D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="YdH-qi-lBR">
+            <objects>
+                <viewController storyboardIdentifier="mapStoryboard" id="Rg0-dx-tev" customClass="mapViewController" customModule="Djikstras" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TsY-Q9-isz"/>
+                        <viewControllerLayoutGuide type="bottom" id="UAA-3s-obX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WhQ-ac-lXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxK-xr-fTZ" customClass="customUITabBar" customModule="Djikstras" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ivQ-Ya-U1c"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Item" image="Car-50.png" id="ba7-XL-eu3"/>
+                                    <tabBarItem image="Walking-50-3.png" id="aYn-lo-GaH"/>
+                                    <tabBarItem image="Bus-50.png" id="D5U-dq-Hn9"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yxK-xr-fTZ" firstAttribute="leading" secondItem="WhQ-ac-lXZ" secondAttribute="leading" id="ROR-Q8-T0I"/>
+                            <constraint firstAttribute="trailing" secondItem="yxK-xr-fTZ" secondAttribute="trailing" id="mix-7g-MEc"/>
+                            <constraint firstItem="UAA-3s-obX" firstAttribute="top" secondItem="yxK-xr-fTZ" secondAttribute="bottom" id="oW2-ZK-Dqh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPj-rE-ASL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bus-50.png" width="50" height="50"/>
+        <image name="Car-50.png" width="50" height="50"/>
+        <image name="Walking-50-3.png" width="50" height="50"/>
+    </resources>
+</document>

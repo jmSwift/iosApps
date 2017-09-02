@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         
                         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
                         NSUserDefaults.standardUserDefaults().synchronize()
-                        
+                     
                     })
                 } else {
                     // Authentification failed
@@ -225,14 +225,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
+        //self.authenticateUser()
+        
         
         if NSUserDefaults.standardUserDefaults().boolForKey("fingerPrint") == true{
             return
         }
+ 
+ 
        
         if(NSUserDefaults.standardUserDefaults().boolForKey("accountActive") == true) {
         self.authenticateUser()
         }
+    
+        
         
     }
  
